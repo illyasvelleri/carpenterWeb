@@ -63,8 +63,9 @@ const Testimonials = () => {
                                 ))}
                             </div>
                             <blockquote className="text-xl text-center text-[#3e3e3e] italic mb-8">
-                                "{testimonials[currentIndex].quote}"
+                                &quot;{testimonials[currentIndex].quote}&quot;
                             </blockquote>
+
                             <div className="text-center">
                                 <div className="font-semibold text-[#3e3e3e]">{testimonials[currentIndex].author}</div>
                                 <div className="text-[#666666]">{testimonials[currentIndex].position}</div>
