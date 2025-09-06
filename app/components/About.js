@@ -11,7 +11,7 @@ const About = () => {
                 <div className="w-full h-96 bg-[#e9e4dd] rounded-xl">
                   {/* Add actual image */}
                   <Image 
-                    src="/Images/Working.jpg" 
+                    src="/Images/restaurant-project2.jpg" 
                     alt="Working Image" 
                     layout="fill" 
                     objectFit="cover" 
