@@ -1,0 +1,118 @@
+const projects = [
+  {
+    id: '1',
+    title: 'Oasis Restaurant',
+    category: 'restaurant',
+    description: 'Custom dining furniture and bar with sustainable materials.',
+    features: [
+      'Custom-designed dining tables and booths',
+      'Energy-efficient LED lighting for ambiance',
+      'Sustainable wood and eco-friendly finishes',
+      'Optimized layout for high-traffic flow',
+    ],
+    gallery: [
+      '/Images/restaurant-project.jpg',
+      '/Images/restaurant-project.jpg',
+      '/Images/restaurant-project.jpg',
+    ],
+    heroImage: '/Images/restaurant-project.jpg',
+    thumbnail: '/Images/restaurant-project.jpg',
+  },
+  {
+    id: '2',
+    title: 'Vista Medical Center',
+    category: 'healthcare',
+    description: 'Reception area and patient room furnishings with antimicrobial finishes.',
+    features: [
+      'Antimicrobial surfaces for hygiene compliance',
+      'Calming color palette for patient comfort',
+      'Custom cabinetry for medical storage',
+      'Ergonomic design for staff efficiency',
+    ],
+    gallery: [
+      '/Images/healthcare-project.jpg',
+      '/Images/healthcare-project.jpg',
+      '/Images/healthcare-project.jpg',
+    ],
+    heroImage: '/Images/healthcare-project.jpg',
+    thumbnail: '/Images/healthcare-project.jpg',
+  },
+  {
+    id: '3',
+    title: 'Horizon Tech Offices',
+    category: 'office',
+    description: 'Open-concept workstations and collaborative spaces for a modern tech company.',
+    features: [
+      'Ergonomic workstations for employee comfort',
+      'Open-plan layout with collaborative zones',
+      'Custom storage solutions for efficiency',
+      'High-end materials for a premium look',
+    ],
+    gallery: [
+      '/Images/office-project.jpg',
+      '/Images/office-project.jpg',
+      '/Images/office-project.jpg',
+    ],
+    heroImage: '/Images/office-project.jpg',
+    thumbnail: '/Images/office-project.jpg',
+  },
+  {
+    id: '4',
+    title: 'Skyline Bistro',
+    category: 'restaurant',
+    description: 'Full interior renovation including custom booths and statement bar.',
+    features: [
+      'Custom booths with premium upholstery',
+      'Statement bar with integrated lighting',
+      'Sustainable materials for durability',
+      'Spacious layout for guest comfort',
+    ],
+    gallery: [
+      '/Images/restaurant-project2.jpg',
+      '/Images/restaurant-project2.jpg',
+      '/Images/restaurant-project2.jpg',
+    ],
+    heroImage: '/Images/restaurant-project2.jpg',
+    thumbnail: '/Images/restaurant-project2.jpg',
+  },
+  {
+    id: '5',
+    title: 'Wellness Clinic',
+    category: 'healthcare',
+    description: 'Calming reception area and treatment room cabinetry.',
+    features: [
+      'Antimicrobial surfaces for hygiene',
+      'Soothing color scheme for patient relaxation',
+      'Custom cabinetry for medical supplies',
+      'Efficient layout for staff workflow',
+    ],
+    gallery: [
+      '/Images/healthcare-project2.jpg',
+      '/Images/healthcare-project2.jpg',
+      '/Images/healthcare-project2.jpg',
+    ],
+    heroImage: '/Images/healthcare-project2.jpg',
+    thumbnail: '/Images/healthcare-project2.jpg',
+  },
+  {
+    id: '6',
+    title: 'Creative Agency HQ',
+    category: 'office',
+    description: 'Flexible meeting spaces and creative studios with custom storage solutions.',
+    features: [
+      'Modular meeting rooms for flexibility',
+      'Creative studios with ergonomic furniture',
+      'Custom storage for equipment',
+      'Modern aesthetic with vibrant accents',
+    ],
+    gallery: [
+      '/Images/office-project2.jpg',
+      '/Images/office-project2.jpg',
+      '/Images/office-project2.jpg',
+    ],
+    heroImage: '/Images/office-project2.jpg',
+    thumbnail: '/Images/office-project2.jpg',
+  },
+];
+
+export default projects;

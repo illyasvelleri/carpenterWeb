@@ -8,7 +8,7 @@ import { FaInstagram } from "react-icons/fa";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 // Mobile navigation links
-const sections = ['home', 'about', 'services', 'projects', 'testimonials', 'contact'];
+const sections = ['home', 'aboutUs', 'services', 'portfolio', 'testimonials', 'contact'];
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -78,7 +78,7 @@ export default function Header() {
               transition={{ duration: 0.3, delay: idx * 0.1 }}
             >
               <a
-                href={`#${item}`}
+                 href={item === "home" ? "/" : `${item}`}
                 className="relative text-sm font-semibold text-gray-900 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-0.5 after:bg-blue-500 after:transition-all after:duration-300 hover:after:w-full hover:text-blue-500"
               >
                 {item.charAt(0).toUpperCase() + item.slice(1)}
@@ -142,7 +142,7 @@ export default function Header() {
                   transition={{ duration: 0.3, delay: idx * 0.1 }}
                 >
                   <a
-                    href={`#${item}`}
+                     href={item === "home" ? "/" : `${item}`}
                     className="block px-4 py-2 text-lg font-medium text-gray-900 hover:bg-blue-50 hover:text-blue-500 transition"
                     onClick={() => setMobileMenuOpen(false)}
                   >

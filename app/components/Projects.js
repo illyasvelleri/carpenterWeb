@@ -131,23 +131,6 @@ const Projects = () => {
                     {project.title}
                   </h3>
                   <p className="text-[#666666]">{project.description}</p>
-                  <button className="mt-4 text-[#d8a25a] font-medium hover:text-[#c79248] transition-colors flex items-center">
-                    View Details
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      className="w-4 h-4 ml-1"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M9 5l7 7-7 7"
-                      />
-                    </svg>
-                  </button>
                 </div>
               </motion.div>
             ))}

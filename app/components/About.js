@@ -2,6 +2,7 @@
 import { motion } from 'framer-motion';
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const About = () => {
   const [currentImage, setCurrentImage] = useState(0);
@@ -187,7 +188,7 @@ const About = () => {
                   title: 'Timely Delivery',
                   description: 'Projects completed on schedule',
                 },
-                
+
                 {
                   icon: (
                     <svg
@@ -226,30 +227,32 @@ const About = () => {
                 </motion.div>
               ))}
             </motion.div>
-            <motion.button
-              className="group relative px-8 py-3 bg-gradient-to-r from-[#d8a25a] to-amber-400 text-white font-semibold rounded-full shadow-lg hover:shadow-amber-400/30 transition-all duration-300"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              variants={itemVariants}
-            >
-              <span className="relative z-10 flex items-center">
-                Discover Our Story
-                <svg
-                  className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M13 7l5 5m0 0l-5 5m5-5H6"
-                  />
-                </svg>
-              </span>
-              <div className="absolute inset-0 bg-gradient-to-r from-amber-400 to-[#d8a25a] opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-            </motion.button>
+            <Link href="/aboutUs">
+              <motion.button
+                className="group relative px-8 py-3 bg-gradient-to-r from-[#d8a25a] to-amber-400 text-white font-semibold rounded-full shadow-lg hover:shadow-amber-400/30 transition-all duration-300"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                variants={itemVariants}
+              >
+                <span className="relative z-10 flex items-center">
+                  Discover Our Story
+                  <svg
+                    className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M13 7l5 5m0 0l-5 5m5-5H6"
+                    />
+                  </svg>
+                </span>
+                <div className="absolute inset-0 bg-gradient-to-r from-amber-400 to-[#d8a25a] opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              </motion.button>
+            </Link>
           </motion.div>
         </div>
       </motion.div>
@@ -260,11 +263,10 @@ const About = () => {
           <button
             key={index}
             onClick={() => setCurrentImage(index)}
-            className={`w-3 h-3 rounded-full transition-all duration-300 ${
-              currentImage === index
+            className={`w-3 h-3 rounded-full transition-all duration-300 ${currentImage === index
                 ? 'bg-[#d8a25a] scale-125'
                 : 'bg-gray-300/50 hover:bg-gray-300/80'
-            }`}
+              }`}
           />
         ))}
       </div>
